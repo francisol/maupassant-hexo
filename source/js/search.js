@@ -84,3 +84,23 @@ var searchFunc = function(path, search_id, content_id) {
         }
     });
 }
+
+function openSearch() {
+
+    $.fancybox.open({
+        src  : '#search-box',
+        type: 'inline',
+        clickOutside : false,
+        opts: {
+            clickOutside: false,
+            touch: false,
+            dblclickOutside : false,
+            baseTpl: '<div class="fancybox-container fc-container fancybox-is-modal fancybox-is-open" role="dialog" tabindex="-1"id="fancybox-container-27" style="transition-duration: 350ms;"><div class="fancybox-bg"></div><div class="fancybox-inner"><div class="fancybox-stage"></div></div></div>'
+        }
+    });
+
+}
+
+$(function () {
+    $("#local-search-btn").click(openSearch)
+})

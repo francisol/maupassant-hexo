@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/tufu9441/maupassant-hexo.svg?branch=master)](https://travis-ci.org/tufu9441/maupassant-hexo)   [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/tufu9441/maupassant-hexo/blob/master/LICENSE)
 
+fork from  tufu9441/maupassant-hexo
+修改本地搜索为弹窗
 > 大道至简
 
 [Preview](https://www.haomwei.com)｜[中文文档](https://www.haomwei.com/technology/maupassant-hexo.html)
@@ -54,12 +56,7 @@ valine: ## https://valine.js.org
   avatar: 'mm' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
   pageSize: 10 ## Number of comments per page.
   guest_info: nick,mail,link ## Attributes of reviewers.
-
-google_search: true ## Use Google search, true/false.
-baidu_search: false ## Use Baidu search, true/false.
-swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
-tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
-self_search: false ## Use a jQuery-based local search engine, true/false.
+search: local # local,google,badu,swiftype
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 fancybox: true ## If you want to use fancybox please set the value to true.
@@ -134,6 +131,7 @@ css: css
 
 # Theme version
 version: 0.0.0
+
 ```
 - disqus - [Disqus](https://disqus.com) shortname
 - uyan - [Uyan](http://www.uyan.cc) id
